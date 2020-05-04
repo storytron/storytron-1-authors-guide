@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - The Reaction Cycle</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj423 {position:absolute;z-index:2;visibility:visible;text-align:left;left:395px;top:74px;width:400px;height:41px;}
+#Oobj433 {position:absolute;z-index:3;visibility:visible;text-align:left;left:207px;top:114px;width:767px;height:1792px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj423">
+<div id="Ggeo384" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>The Reaction Cycle<br></B></font></div>
+</div>
+</div>
+
+<div id="Oobj433">
+<div id="Grtf378" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">When one or more Actors learn of an Event, a process begins called the Reaction Cycle. The purpose of this Cycle is to allow these Actors to react to that Event (called "ThisEvent" for the duration of the Reaction Cycle). ThisEvent's Subject is called ThisSubject, ThisEvent's DirObject is called ThisDirObject, and so on for all of ThisEvent's WordSockets.<br>
+<br>
+If ThisEvent has just entered the Historybook, any Consequence Scripts it might have are executed. (Note that SetAnticipatedValue is NOT a Consequence and is NOT executed at this time).<br>
+<br>
+After any Consequence Scripts are executed, the Actors who have just learned of ThisEvent take turns reacting. When it is an Actor's turn to react, she is called the ReactingActor. When an Actor is done reacting, she ceases to be the ReactingActor. Another Actor who has just learned of ThisEvent then gets his turn, and becomes the ReactingActor. See below for the order in which Actors get to react. Each ReactingActor goes through the following steps:<br>
+<br>
+<U>The ReactingActor Assumes a Role</U> <br>
+<br>
+When a ReactingActor's turn begins, the first thing she does is to seek a Role suitable for her, from among ThisEvent's Roles. She does this by going through ThisEvent's Roles in the order in which they are listed in ThisVerb's Role list. She checks each Role's AssumeRoleIf Script. This Script tells her whether or not to assume the Role. When she finds a Role to assume, she assumes it immediately and proceeds to the next step. For the duration of her turn, the Role she has assumed is called the AssumedRole. If she finds no Role to assume, she passes her turn.<br>
+<br>
+<U>The AssumedRole Engenders EmotionalReactions in the ReactingActor </U><br>
+<br>
+Once the ReactingActor has assumed a Role, if that Role has EmotionalReaction Scripts, those Scripts are executed. This usually causes changes to the ReactingActor's personality profile.<br>
+<br>
+<U>The ReactingActor Decides whether to Make a Reaction Plan </U><br>
+<br>
+The ReactingActor will now normally want to create a Plan in reaction to ThisEvent. However, if ThisEvent is Hijackable, she might not be able to do so. Hijackable Events restrict the number of Actors who are able to react to them.<br>
+<br>
+<U>The ReactingActor finds the Acceptable Candidates for the Wordsockets of each Option's Verb </U><br>
+<br>
+The AssumedRole offers the ReactingActor several Options. An Option represents an opportunity to create a Plan based on a certain Verb. The ReactingActor will choose one of these Options to start creating his or her reaction Plan. As a first step in making this decision, she creates a tentative Plan based on each of these Options. To make a tentative Plan with a given Option, she must assign a Word to each WordSocket of that Option's Verb. For each WordSocket, she finds all Words in the storyworld of the correct data type for that WordSocket. She then executes the given Option's Acceptability Script for that WordSocket for each of these candidate Words. The Script determines, for each candidate, whether that candidate is Acceptable or not.<br>
+<br>
+<U>The ReactingActor assigns Words to each Option's WordSockets </U><br>
+<br>
+Now the ReactingActor creates the tentative reaction Plan with each of the AssumedRole's valid Options. For each WordSocket of a given Option's Verb, she must select one of the WordSocket's Acceptable candidates. That Word will be assigned to the said WordSocket.<br>
+<br>
+If the ReactingActor is the Protagonist, the player may select freely from among each WordSocket's Acceptable candidates.<br>
+If the ReactingActor is computer-controlled, she uses Desirability Scripts to select which candidate to assign to each WordSocket. Each Option has a Desirability Script for each of its Verb's WordSockets. The computer-controlled ReactingActor applies that Script to each of that WordSocket's Acceptable candidates. This Script determines the candidate's relative merit compared to the other candidates. She chooses the candidate with the greatest relative merit. That Word is assigned to the Wordsocket.<br>
+<br>
+<U>The ReactingActor Selects a Valid Option </U><br>
+<br>
+If the ReactingActor is the Protagonist, the player now selects any one of the tentative Plans he has made during the previous steps of the Reaction Cycle. The Option on which this Plan is based is called the SelectedOption for the duration of his turn.<br>
+<br>
+If the ReactingActor is computer-controlled, she checks each valid Option's Inclination Script. This Script allows her to determine that Option's relative merit. She selects the tentative Plan which is based on the Option with the greatest relative merit. This Option is called the SelectedOption for the duration of her turn.<br>
+<br>
+<U>The Reacting Actor Creates the Reaction Plan</U> <br>
+<br>
+Once the ReactingActor has selected the tentative Plan she wishes to carry out, she sets this Plan's PlannedExecutionTime according to its Verb's TimeToPrepare, then adds the Plan to the Planlist. Her turn ends.<br>
+<br>
+<U>A New Reacting Actor is Chosen </U><br>
+<br>
+The turn now passes to another Actor who has just learned of ThisEvent, and who has not yet had a turn to react. The turn is first passed, in order of Priority, to Actors other than ThisSubject and ThisDirObject. Next, the turn passes to ThisDirObject, and finally to ThisSubject. When ThisSubject has had a chance to react, the Reaction Cycle ends.</font><br>
+<font face="Bookman Old Style" class="fsx04"><hr><br></font><div align="center"><font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-action-cycle.html">The Action Cycle</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next:&nbsp; <a href="ag-travel-cycle.html">The Travel Cycle</a><br></font></div>
+</div>
+</div>
+</body> 
+</html> 
+
+<!-- Localized -->

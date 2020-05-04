@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - Bounded Multiplication</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj173 {position:absolute;z-index:2;visibility:visible;text-align:left;left:207px;top:117px;width:767px;height:5173px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj179 {position:absolute;z-index:3;visibility:visible;text-align:left;left:395px;top:75px;width:400px;height:41px;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj173">
+<div id="Ggeo159" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">Let me take another stroll down memory lane, this time recalling not my first kiss but my first encounter with multiplication. They showed me these obscure hieroglyph thingies:<br>
+<br>
+&nbsp;3*2 = 6<br>
+<br>
+3*3 = 9<br>
+<br>
+3*4 = 12<br>
+<br>
+etc.<br>
+<br>
+Then they wanted me to memorize them. As. If. I wish I could say that my math skills prospered despite my inability to multiply two by two to save my life. On the other hand, I must've been saved from my innumeracy somehow, or I wouldn't be writing this, now would I? Was it a devoted teacher with an especially persuasive ruler? Proper parenting? God? None of the above. It was this nifty trick I discovered:<br>
+<br>
+&nbsp;3*2 = 3 + 3<br>
+<br>
+3*3 = 3 + 3 + 3<br>
+<br>
+3*4 = 3 + 3 + 3 + 3<br>
+<br>
+etc.<br>
+<br>
+So, multiplication is just a shorthand for taking a number and adding it to itself. Rinse, repeat. Armed with this knowledge, I could approach the hairiest calculus problems undaunted. And come to think of it, haven't we just dealt with such a problem? Here's a summation of my early kissing career, as described above:<br>
+<br>
+&nbsp;0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 = 0.4<br>
+<br>
+All we did was take the BNumber 0.1 and add it to itself five times, resulting in six times 0.1. Of course, it would have been much simpler to use multiplication for this purpose. In the BNumber world, this would be achieved by the following operation:<br>
+<br>
+&nbsp;0.1 * 0.85 = 0.4<br>
+<br>
+Looks ridiculous, doesn't it? You were willing to indulge me that bit about BSum, but this is really too much, isn't it? Well, again I ask for your patience - there really is a method to this madness. If you keep an open mind I just might be able to bring you around to the thinking of Storytron's in-house eggheads.<br>
+<br>
+Let's begin by considering some Deep Truths about multiplication. Multiplication always starts with a value X (let's assume it's a positive number). You then take another such X and add it to the first:<br>
+<br>
+&nbsp;X + X = 2X<br>
+<br>
+You then take the result and you add another X to it. You keep doing this for a specified number of times (“Y” times). This gives you a number - the product of X and Y. In other words:<br>
+<br>
+&nbsp;X*Y = YX.<br>
+<br>
+Rocket science, right? Now, there are a couple of kinks in this system, depending on the value of Y. First of all, if Y is zero we don't perform this process even once. We do exactly nothing, and that's why we always end up with zero. If Y is 1, we add a first X, but don't add anything else, and that's why we always end up with X. Let's draw a schematic map of multiplication, using zero and 1 as our landmarks: </font><br>
+<br>
+<font face="Times New Roman" class="fsx04"><center><img src="images/numbers5.jpg" width="680" height="93"></center></font><br>
+<br>
+<font face="Bookman Old Style" class="fsx04">Big deal, huh? Ten times zero is zero. Ten times 0.5 is 5. Ten times 1 is 10. Ten times 1.5 is 15. Ten times 2 is 20. So on. Doesn't take an Einstein. But there is one extremely important point here: this whole system is built around multiples of the number 1. Let's take that concept for a whirl. Suppose my alien abductors from the BSum section wanted to learn about the meaning of “1” for multiplication. How would I define it for them? <br>
+<br>
+&#0183;&nbsp;When you multiply X by Y multiples of 1, you get Y multiples of X.<br>
+&#0183;&nbsp;When you multiply X by a value that is greater than Y multiples of 1, but less than Y+1 multiples of 1, you get a number which is greater than Y multiples of X, but less than Y+1 multiples of X.<br>
+<br>
+So far for normal numbers. What about BNumbers? Well, there is indeed a BNumber that fits the above definition: 0.5. In the BNumber world: <br>
+<br>
+&#0183;&nbsp;When you multiply X by Y multiples of 0.5, you get Y multiples of X.<br>
+&#0183;&nbsp;When you multiply X by a value that is greater than Y multiples of 0.5, but less then Y+1 multiples of 0.5, you get a number which is greater than Y multiples of X, but less than Y+1 multiples of X.<br>
+<br>
+So, while normal multiplication works in multiples of 1, BNumber multiplication works in multiples of 0.5. What are the multiples of 0.5? Remember that 0.5 is a BNumber, so to calculate its multiples we must use BSum. Once we've done that, we can draw a map of BNumber multiplication. <br>
+<br>
+Let's imagine a 0.5k kiss - a much more potent kiss than the kind we discussed above. Those were the tentative pecks of infatuated teenagers, while this is an all-in, true-love kind of kiss. You can only have it after you've had some experience, so let's start out my kissitude at 0.5. How would another five such kisses affect my kissitude? Have a look: </font><br>
+<br>
+<font face="Times New Roman" class="fsx04"><center><img src="images/numbers6.jpg" width="576" height="361"></center></font><br>
+<br>
+<font face="Bookman Old Style" class="fsx04">So the first five multiples of 0.5 are 0.67, 0.75, 0.80, 0.83 and 0.85. Therefore, in the BNumber world, multiplication looks like this: <br>
+<br>
+X * 0.5 = X <br>
+<br>
+X * 0.67 = X+X <br>
+<br>
+X * 0.75 = X+X+X <br>
+<br>
+X * 0.80 = X+X+X+X <br>
+<br>
+X * 0.83 = X+X+X+X+X <br>
+<br>
+X * 0.85 = X+X+X+X+X+X <br>
+<br>
+Now we can draw a schematic map of BNumber multiplication:</font><br>
+<br>
+<font face="Times New Roman" class="fsx04"><center><img src="images/numbers7.jpg" width="680" height="93"></center></font><br>
+<br>
+<font face="Bookman Old Style" class="fsx04">Now let's go back to our original, 0.1k kisses. But this time, let's use BProduct instead of BSum to describe how they affected my kissitude. To calculate the effect of one single kiss, we would multiply 0.1 by a single multiple of 0.5: <br>
+<br>
+0.1 * 0.5 = 0.1 <br>
+<br>
+To calculate the effect of two kisses, we would again multiply 0.1, this time by two multiples of 0.5: <br>
+<br>
+0.1 * (0.5 + 0.5) = <br>
+0.1 * 0.67 = 0.18 <br>
+<br>
+To make three kisses, we would multiply 0.1 by three multiples of 0.5: <br>
+<br>
+0.1 * (0.5 + 0.5 + 0.5) = <br>
+0.1 * 0.75 = 0.25 <br>
+<br>
+We would add 0.5 for each additional kiss, as shown below:</font><br>
+<br>
+<font face="Times New Roman" class="fsx04"><center><img src="images/numbers8.jpg" width="578" height="413"></center></font><br>
+<br>
+<font face="Bookman Old Style" class="fsx04"><B>Bounded Division </B><br>
+<br>
+Suppose my alien abductors wanted to erase half my kisses from my memory. Their starting point would be six kisses: <br>
+<br>
+0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 = 0.4 <br>
+<br>
+Their desired endpoint would be three kisses: <br>
+<br>
+0.1 + 0.1 + 0.1 = 0.25 <br>
+<br>
+So, how do you turn 0.4 into 0.25? Well, let's start with what we know; how to turn 0.25 into 0.4: <br>
+<br>
+0.25 + 0.1 + 0.1 + 0.1 = 0.4 <br>
+<br>
+We can also write this thusly: <br>
+<br>
+0.25 + 0.25 = 0.4 <br>
+<br>
+Now, “0.25 + 0.25” is just another way of saying “0.25 times two.” And we already know how to do the BNumber equivalent of that: “0.25 * 0.67.” It follows that: <br>
+<br>
+0.25 * 0.67 = 0.4 <br>
+<br>
+Now, division is just multiplication in reverse. So, if the product of 0.25 and 0.67 is 0.4, it follows that the quotient of 0.4 and 0.67 is 0.25. So: <br>
+<br>
+0.4 / 0.67 = 0.25 <br>
+<br>
+This inversion works the same way for all multiples of 0.5. For example, suppose my abductors wanted to wipe out two thirds of my kissing memories. Their starting point would again be six kisses: <br>
+<br>
+0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 = 0.4 <br>
+<br>
+This time, their desired endpoint would be: <br>
+<br>
+0.1 + 0.1 = 0.18 <br>
+<br>
+So let's start with what we know; how to turn 0.18 into 0.4: <br>
+<br>
+0.18 + 0.1 + 0.1 + 0.1 + 0.1 = 0.4 <br>
+<br>
+Thus: <br>
+<br>
+0.18 + 0.18 + 0.18 = 0.4 <br>
+<br>
+This is “0.18 times three,” which in BNumbers makes: <br>
+<br>
+0.18 * 0.75 = 0.4 <br>
+<br>
+Therefore: <br>
+<br>
+0.4 / 0.75 = 0.18 <br>
+<br>
+<br>
+<B>UNumbers </B><br>
+<br>
+A BNumber can be anything between -1 and 1, but sometimes you require a value between 0 and 1. The Operator BNumber2UNumber takes a BNumber and re-expresses it as a Unary Number, which is basically a BNumber except it can only be anything between 0 and 1. The following table shows examples of BNumbers and their corresponding UNumbers:</font><br>
+<br>
+<font face="Times New Roman" class="fsx04"><center><img src="images/numbers9.jpg" width="490" height="295"></center></font><br>
+<br>
+<font face="Bookman Old Style" class="fsx04">The Operator UNumber2BNumber does the exact opposite, taking a UNumber and turning it into its corresponding BNumber.</font><br>
+<br>
+<font face="Bookman Old Style" class="fsx04"><hr></font><br>
+<font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-script-numbers.html">BNumbers and UNumbers</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br></font></div>
+</div>
+
+<div id="Oobj179">
+<div id="Ggeo168" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>Bounded Multiplication<br></B></font></div>
+</div>
+</div>
+</body> 
+</html> 
+
+<!-- Localized -->

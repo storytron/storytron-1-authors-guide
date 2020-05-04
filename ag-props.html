@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - Props</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj417 {position:absolute;z-index:2;visibility:visible;text-align:left;left:395px;top:70px;width:400px;height:49px;}
+#Oobj1657 {position:absolute;z-index:3;visibility:visible;text-align:left;left:207px;top:115px;width:767px;height:1253px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj417">
+<div id="Ggeo378" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>Props<br></B></font></div>
+</div>
+</div>
+
+<div id="Oobj1657">
+<div id="Grtf43" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">Props are simply the material objects carried around or owned by Actors in the storyworld. Each Prop has a name and a picture, and is defined by several Traits, as described below. Unless otherwise noted, all these Traits are BNumbers which are defined by you during storybuilding, and can be changed by Consequence Scripts while the storyworld is being played.<br>
+<br>
+There is a special Prop called Nothing that appears in every storyworld. It's used to represent the absence of Props. For instance, if Mimi has an empty box and Will asks her what's inside, she will say that Nothing is inside.<br>
+<br>
+<B>Prop Core Traits</B><br>
+<br>
+A Prop's Core Traits are BNumbers that define this Prop's usability for different purposes. It's entirely up to you to decide what kind of Prop Core Traits to include in your storyworld. For example, if you are making an archeological storyworld, you might want to be able to define the age of each Prop. You can create a Core Prop Trait names Antediluvian_Modern, with -1 meaning Adam's fig leaf apron, and 1 meaning a 4G cell phone. If your Storyworld includes violence, you might create the Core Prop Trait Harmless_Lethal. A piece of scented paper tissue would have a value of -1 for this Trait. A hydrogen bomb would have a value of 1.<br>
+<br>
+<B>Prop State Traits</B><br>
+<br>
+Prop State Traits are bookkeeping devices used to keep track of the Prop's situation.<br>
+<br>
+<U>InPlay</U><br>
+<br>
+A Trait that can be set to either "true" or "false". If "false", then the Prop cannot be seen, used or acted upon by Actors. For all intents and purposes, it is non-existent.<br>
+<br>
+<U>Owner</U><br>
+<br>
+This can be set to any Actor and denotes whom this Prop belongs to. By default, all Props belong to Fate, however this can be changed. Props don't become unowned - if you want no Actor to own a Prop, you should change its Owner to Fate - she couldn't care less about her property.<br>
+<br>
+<U>Carried</U><br>
+<br>
+This Attribute can be set to either "true" or "false". If "true", it means that the Prop is being carried by its owner - it will move alongside its owner from Stage to Stage. If false, it means the Prop is just lying around. Its owner will not take it with him when moving from Stage to Stage. This Attribute is "false" by default.<br>
+<br>
+<U>Visible</U><br>
+<br>
+This Attribute can be set to either "true" or "false", and denotes whether the Prop is in plain view or contained in another Prop.<br>
+<br>
+<U>PropLocation</U><br>
+<br>
+Indicates the Stage in which the Prop is located. This is just to keep track of what's where, and is updated automatically.<br>
+<br>
+<U>KnowsMe</U><br>
+<br>
+A Prop keeps a record of which Actors are familiar with it. If an Actor knows of a Prop, then that Prop's KnowsMe for that Actor is "true." If the Actor doesn't know of a Prop, then that Prop's KnowsMe for that Actor is "false." You can initialize a Prop's KnowsMe values using Swat, and can later change them using Consequence Scripts.<br>
+<br>
+<hr><br></font><div align="center"><font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-relationships.html">Relationships</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next:&nbsp; <a href="ag-sentences.html">Sentences</a><br></font></div>
+</div>
+</div>
+
+</body> 
+</html> 
+
+<!-- Localized -->

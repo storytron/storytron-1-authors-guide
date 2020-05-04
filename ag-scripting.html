@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - Scripting</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj425 {position:absolute;z-index:2;visibility:visible;text-align:left;left:395px;top:75px;width:400px;height:41px;}
+#Oobj116 {position:absolute;z-index:3;visibility:visible;text-align:left;left:207px;top:115px;width:767px;height:2237px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj425">
+<div id="Ggeo386" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>Scripting<br></B></font></div>
+</div>
+</div>
+
+<div id="Oobj116">
+<div id="Grtf116" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">Scripting is a complicated but necessary part of authoring a storyworld. To understand why it's so important, let's consider the difference between a traditional story and interactive storytelling.<br>
+<br>
+A story is like a proverbial fish. You give it to a mentally hungry person, and they're satisfied for today. You better hope they don't like it, though, or tomorrow they'll be all over you for a second helping. To deal with this insatiability, man has invented a fantastic array of tools for catching, processing, canning and distributing mental fish, collectively called “the publishing industry.” But the problem with fish, mental or physical, fresh or canned, remains: you can only have them for dinner once.<br>
+<br>
+A storyworld has little in common with a fish. In fact, it's more like a fishing rod. Sure, it doesn't smell like dinner, it doesn't taste like dinner, but it can put innumerable fish on your table. Even better, it can provide a variety of fish. One person might use a fishing rod and get a salmon - another might get an eel. Or the same person might try twice, and get a silurid on the first try and a hammerhead shark on the second. So a fishing rod is a tool that repeatedly produces a variety of fish. Similarly, a storyworld is a tool that repeatedly produces a variety of stories. Of course, stories are more difficult to produce than are fish. That's where Scripting comes in.<br>
+<br>
+Basically, you produce any story by repeatedly deciding “what happens next.” Your storyworld must be able to make such decisions many thousands of times per playing. Further, it must do it in a way that creates an interesting story for the player, no matter what the player chooses to do (See “The Reaction Cycle” for details on a storyworld's most important decisions). Your storyworld depends on you to instruct it on how to make such decisions. That's what a Script is; a set of instructions for making a decision. When a Script is used to make a decision, it is said to be executed. <br>
+<br>
+These instructions are written in a special Scripting language. This language is very weird and a little confusing, but it's perfectly suited for its purpose: it is precise and concise, and can describe all of a storyworld's elements. In fact, its 1000~ words, called Operators, are grouped according to the types of storyworld elements they describe.&nbsp; The type of element an Operator describes is that Operator's data type. For example, an Operator that describes an Actor is of the Actor data type. Operators are color-coded according to their data type. Storytronics uses the following data types: Actor, Prop, Stage, Verb, Event, ActorTrait, MoodTrait, PropTrait, StageTrait, Quantifier, Number and BNumber.<br>
+<br>
+Operators: Returning Values, Taking Arguments<br>
+<br>
+The most basic kind of Operator is the Constant. These Operators have a constant meaning, that never changes regardless of their context. For example, the Operator “Fate” is a Constant. It always refers to the Actor Fate, who appears in every storyworld. Each storyworld has one such Constant Operator for each of its Actors, Stages, Props and Verbs. Numbers, such as “4” or “0.53” are another example of Constants.<br>
+<br>
+Most Operators are not constants. Their meaning depends on the context in which they are used. For example, the meaning of “Protagonist” depends on which Actor is the storyworld's Protagonist. If you've made an Actor named Wanda your Protagonist, then the Operator “Protagonist” will refer to Wanda. If Philip is your Protagonist, then this Operator will refer to Philip. There are several names for this. We say that “Protagonist” resolves to “Philip.” We say it produces “Philip.” We say it returns “Philip.”<br>
+<br>
+Most Operators are even less stable than “Protagonist.” For example, the Operator “ThisTime” produces the number of storyminutes elapsed since the story began. So, five storyminutes into the story it would produce “5,” while five storyminutes later it would produce “10.”<br>
+<br>
+The final class of Operators are those that take arguments. An argument is simply an Operator that feeds into another Operator. For example, the Operator “Sum” takes two arguments. Each of these arguments feeds a number into Sum. Sum adds the two numbers together and produces the result. Any Operator can serve as an argument for another, provided it's of the right data type. In this example, any Operator of the Number data type could be an argument for Sum.<br>
+If this were a programming language, you'd have to worry about not mixing apples and oranges. For example, taking a Stage Operator and using it as an argument for an Operator that takes a Quantifier. Swat obviates this problem by never letting you put an Operator where it doesn't belong. If an Operator seems to vanish from the Scripting menu, this is probably why.<br>
+<br>
+Poison<br>
+<br>
+Poison is what happens when your Script doesn't make sense. Generally speaking, there are two ways this can happen. First, it can happen when you create a Script that never makes sense. For example, if your Script contains a division by a Number constant, and that number happens to be zero. The other way this can happen is that your Script usually makes sense, but something happens that screws it up temporarily. For example, your Script might contain an AreSameActor Operator. This Operator takes two Actor arguments, which in your case you've defined as "Protagonist" and "PastActor1 of: ThisCausalEvent." The first argument could never screw up - there's always a Protagonist in your storyworld! The second argument is another matter. What if ThisCausalEvent doesn't have an Actor1? Then "AreSameActor" doesn't get two Actors it can compare to each other. Your Script's screwed up! You've got Poison on your hands! Fortunately, Poison isn't quite as lethal as it may sound. It affects only the one Script it occurs in. For Consequence and EmotionalReaction Scripts, this just means the Script does nothing. For other Scripts, there are a few side effects, as described below:<br>
+<br>
+<center><img src="images/poison-table.jpg" height="349" width="576"></center><br>
+<br>
+Note that a Script can only be poisoned when it is executed. For example, the Protagonist never executes Inclination Scripts, so they don't affect the Options available to her, even if these Scripts would be poisoned if she did execute them.<br>
+<br>
+Also note that Poison is a temporary situation, only affecting the current execution of this Script. It has no effect on the next time the Script is executed (of course, each fresh execution is a fresh opportunity to screw up anew and generate another Poisoning).<br>
+<br>
+<hr><br></font><div align="center"><font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-travel-cycle.html">The Travel Cycle</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next:&nbsp; <a href="ag-script-types.html">Script Types</a><br></font></div>
+</div>
+</div>
+</body> 
+</html> 
+
+<!-- Localized -->

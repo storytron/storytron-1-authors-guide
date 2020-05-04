@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - The Action Cycle</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj422 {position:absolute;z-index:2;visibility:visible;text-align:left;left:395px;top:75px;width:400px;height:41px;background-color:#dec4a6;}
+#Oobj1686 {position:absolute;z-index:3;visibility:visible;text-align:left;left:207px;top:115px;width:767px;height:1287px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj422">
+<div id="Ggeo383" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>The Action Cycle<br></B></font></div>
+</div>
+</div>
+
+<div id="Oobj1686">
+<div id="Grtf1619" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">During the Action Cycle, each Actor, in order of Priority, is given a chance to perform the Plans he has made.<br>
+<br>
+When an Actor gets a chance to perform his Plans, he goes through the following steps (let's call this Actor "the prospective Subject"):<br>
+<br>
+<U>The Prospective Subject Checks Whether He is Eligible</U><br>
+<br>
+The prospective Subject must perform a Plan if possible. Even the Protagonist automatically performs the Plans she has made at the earliest opportunity; the player can't change his mind. However, there are a few contingencies that might make it impossible to perform a Plan. First of all, the prospective Subject may not be eligible to perform a Plan. For an Actor to be eligible, he must be active and conscious, and must not be occupied.<br>
+<br>
+If the prospective Subject is not eligible, he skips his or her turn for this Action Cycle.<br>
+<br>
+<U>The Prospective Subject Finds Eligible Plans to Perform</U><br>
+<br>
+If the prospective Subject is eligible, he goes through the Planlist, seeking Plans to perform. He can perform any of his Plans which fulfill these conditions: <ul>
+<li>&nbsp;The Plan's PlannedExecutionTime must have arrived. In other words, the current Storyminute must be the same as or later than the Plan's PlannedExecutionTime.
+<li>&nbsp;The Plan's Audience Definition must be met. For the purpose of meeting Audience Definitions, Spies are always considered NOT to be in the same Stage as the Prospective Subject.
+<li>&nbsp;The Plan's Wordsockets must all have Words assigned to them.
+<li>&nbsp;If the Prospective Subject is in Nowhere, the Plan's Verb must be a System Verb.</ul>If the Prospective Subject finds no eligible Plans, he skips the rest of his turn. If he finds eligible Plans, he performs the oldest among them. The exception to this are "depart for" and "arrive at" Plans, which are always performed first.<br>
+<br>
+<U>The Subject Ceases to be Prospective and Performs the Plan</U><br>
+<br>
+The Plan is deleted from the Planlist and moved into the Historybook, becoming an Event. The Subject's OccupiedUntil Situational Attribute is set to the current Storyminute, plus the new Event's TimeToExecute. If the Subject is in a Stage other than Nowhere, he becomes its StageOwner.<br>
+<br>
+<U>The New Event's Properties are Set</U><br>
+<br>
+The new Event's Timestamp is set to the current Storyminute. The new Event's PageNumber is set to the PageNumber of the Event with the greatest PageNumber, plus one.<br>
+<br>
+<U>Witnessing Actors Learn of the New Event</U><br>
+<br>
+All Actors who witness the performance of the new Event learn of it. An Event's Audience Definition (as defined by its Verb) determines which Actors can witness that Event, generally depending on whether or not these Actors are in the same Stage as the Subject when the Event is performed. For the purpose of witnessing Events, Spies are treated just like normal Actors. Actors must be active and conscious to witness an Event.<br>
+<br>
+When an Actor learns of an Event, that Event's WhoKnows for that Actor is set to "true". The Action Cycle is paused, and a Reaction Cycle is started for the Event. When the Reaction Cycle is complete, the Subject's turn ends and the next Actor, in order of Priority, gets a chance to perform a Plan. If all Actors have already taken their turn in this Action Cycle, the Action Cycle ends.<br>
+<br>
+<hr><br></font><div align="center"><font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-drama-cycle.html">The Drama Cycle</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next:&nbsp; <a href="ag-reaction-cycle.html">The Reaction Cycle</a><br></font></div>
+</div>
+</div>
+
+</body> 
+</html> 
+
+<!-- Localized -->

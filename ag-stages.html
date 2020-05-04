@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - Stages</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj419 {position:absolute;z-index:2;visibility:visible;text-align:left;left:395px;top:75px;width:400px;height:41px;}
+#Oobj45 {position:absolute;z-index:3;visibility:visible;text-align:left;left:207px;top:114px;width:767px;height:1608px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj419">
+<div id="Ggeo380" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>Stages<br></B></font></div>
+</div>
+</div>
+
+<div id="Oobj45">
+<div id="Grtf45" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">Stages are the Storytronics representation of physical space. Storytronics is about people, not things, and, accordingly, Stages are very simple compared to Actors. Stages contain Actors and Props.<br>
+<br>
+Stages are not at all similar to real world locations - there is no movement possible inside a Stage, and no significance to (indeed, no way to ascertain) where each Actor is inside the Stage. You're either in the Stage, or you're not, and that's all there is to know about your location. Each Stage has a name and an image used to represent it.<br>
+<br>
+There is a special Stage called Nowhere that appears in every storyworld. Nowhere is where Actors go when they are somehow removed from the story, by becoming "inactive" for instance (see Actor State Traits). Nowhere has no Attributes, and Actors inside it cannot interact with each other.<br>
+<br>
+<B>Stage Core Traits</B><br>
+<br>
+&nbsp;Stage Core Traits are BNumbers describe the kinds of things which are likely to happen in each Stage. It's up to you to decide what kinds of Core Traits to have for Stages in your storyworld. For example, if you create a post-nuclear-apocalypse storyworld, you might want to define the amount of radiation in each Stage. </font><font face="Bookman Old Style" class="fsx04">You do this by creating a Stage Core Trait named "Radiated_Clean" and defining its value for each Stage, from -1 meaning A-Bomb impact site to 1 meaning clean.</font><br>
+<br>
+<br>
+<font face="Bookman Old Style" class="fsx04"><B>Stage State Traits</B><br>
+<br>
+Stage State Traits are bookkeeping devices used to keep track of the Stage's situation.<br>
+<br>
+<U>DoorOpen</U><br>
+<br>
+This Trait can be set to either "true" or "false". If "false", Actors inside the Stage may not leave, and Actors outside it cannot enter. If "true", all movement is possible as normal. You are free to define which Stage Doors are open and closed at the start of the story. Actors can open and close Stage Doors using the appropriate Consequence Scripts. This Trait does not represent a physical door - rather, it represents the dramatic need to close a certain Stage off. This is why all Stages have this Trait, even outdoors ones.<br>
+<br>
+<U>DoorLocked</U><br>
+<br>
+This is a Trait which you cannot access directly through Script. It can be either "true" or "false". If set to "true", the Stage's Door cannot auto-open. If set to "false", the Door can auto-open as normal. This Attribute is changed using SetDoorOpen Consequence Scripts. When this Consequence sets DoorOpen to "true", it has the side-effect of setting DoorLocked to "false", and vice versa. You cannot initialize this Attribute directly. Instead, at the start of the story, a Stage's DoorLocked Trait is set to equal that Stage's DoorOpen Trait.<br>
+<br>
+<U>Unwelcoming_Homey</U><br>
+<br>
+Each Stage has an Unwelcoming_Homey value with each Actor. This is a BNumber which represents how at ease that Actor feels in this Stage. An Actor feels completely at home at a Stage where his or her Unwelcoming_Homey is 1. An Actor shuns a Stage where his or her Unwelcoming_Homey value is -1. The more at home an Actor feels in a Stage, the more likely he or she is to go there. You define all Stages' Unwelcoming_Homey values with all Actors during storyworld creation, and they can be changed by Consequence Scripts.<br>
+<br>
+<U>Position</U><br>
+<br>
+These are in fact two different Attributes: an X coordinate and a Y coordinate, denoting the Stage's location in the storyworld's imaginary "map". The scale is measured is Storyminutes. For instance, it would take one Storyminute to go from location (0, 0) to location (0, 1). Apart from determining travel time between Stages (see Travel), a Stage's Position has absolutely no effect on the storyworld. This value is defined by you during storybuilding, and Actors can change it using Consequence Scripts.<br>
+<br>
+<U>StageOwner</U><br>
+<br>
+This Trait can be set to any Actor. It does not mean the Actor who owns this Stage as his or her property - it means the Actor who last performed a Sentence in this Stage. This is automatically updated during the Action Cycle, and you cannot set it manually.<br>
+<br>
+<U>KnowsMe</U><br>
+<br>
+A Stage keeps a record of which Actors are familiar with it. If an Actor knows of a Stage, then that Stage's KnowsMe for that Actor is "true." If the Actor doesn't know of a Stage, then that Stage's KnowsMe for that Actor is "false." You can initialize a Stage's KnowsMe values using Swat, and can later change them using Consequence Scripts.<br>
+<br>
+<hr><br></font><div align="center"><font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-sentences.html">Sentences</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next:&nbsp; <a href="ag-verbs.html">Verbs</a><br></font></div>
+</div>
+</div>
+</body> 
+</html> 
+
+<!-- Localized -->

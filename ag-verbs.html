@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - Verbs</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj420 {position:absolute;z-index:2;visibility:visible;text-align:left;left:395px;top:79px;width:400px;height:41px;}
+#Oobj46 {position:absolute;z-index:3;visibility:visible;text-align:left;left:207px;top:115px;width:767px;height:3815px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj420">
+<div id="Ggeo381" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>Verbs<br></B></font></div>
+</div>
+</div>
+
+<div id="Oobj46">
+<div id="Grtf46" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">A Verb is a Deikto Word that describes an action in the storyworld. Verbs are the most important type of Word, because they play three unique roles in Deikto Sentences. Through WordSockets, they define the form of all Sentences. Through Roles and Options, they control how Actors react to Sentences. Finally, through Audience Definitions and Consequences, they control how Sentences are performed and how they affect the storyworld.<br>
+<br>
+<B>WordSockets</B><br>
+<br>
+A Verb is only meaningful in certain contexts. You can't just "eat" - you must eat something. You can't just "give" - you must give something to someone. A Verb's WordSockets define those somethings and someones in whose context it is meaningful. When an Actor makes a Plan to perform a certain Verb, he must provide the context required by the Verb's WordSockets. For example, the Verb "give" would have two WordSockets: DirObject (the "someone") and Prop1 (the "something"). When an Actor makes a "give" Plan, these WordSockets will instruct him to specify what he will be giving, and to whom.<br>
+<br>
+<B>Roles and Options</B><br>
+<br>
+When a Sentence is performed, Actors usually react to it by creating reaction Plans. The Roles and Options of that Sentence's Verb determine what reaction Plans they make. Roles represent the different points of view than Actors might take on a given Sentence. For example, a Verb such as "defame" can be viewed from at least four points of view: that of the defamer, that of his interlocutor, that of a neutral bystander, and that of a bystander who happens to be the victim of the defamation. When Actors react to a Sentence, they first determine which Role they fit (using its AssumeRoleIf Script), and assume that Role. They then experience appropriate emotional reactions (the Roles EmotionalReaction Scripts).<br>
+<br>
+Each Role has a number of Options attached to it. Each Option represents the opportunity to create a reaction Plan with a given Verb (the Option is said to be "based" on that Verb). When an Actor assumes a Role, he chooses one of that Role's Options to make his reaction Plan with (computer-controlled Actors use these Option's Inclination Scripts to choose). The Actor must then assign Words to his Plan, as determined by the WordSockets of the Verb it's based on. Each Option has specific limitations regarding which Words can be assigned to which WordSockets (Acceptable Scripts). Each Option also guides computer-controlled Actors to choose among these Words (Desirable Scripts).<br>
+<br>
+<B>Audience Defintions</B><br>
+<br>
+<img src="images/audience-defs-table.jpg" height="558" width="680" align="center"><br>
+<br>
+*If the Verb in question doesn't have such a WordSocket, the Audience definition can never be satisfied.<br>
+<br>
+**Sentences with this Audience Definition are not recorded in the Historybook.<br>
+<br>
+<br>
+<B>Verb Properties</B><br>
+<br>
+Verbs have several properties which affect the way they are performed.<br>
+<br>
+<U>Expression</U><br>
+<br>
+This is the emoticube associated with the Verb. It has no effect on the storyworld, but it does affect the player's experience.<br>
+<br>
+<U>Time to Prepare</U><br>
+<br>
+This is the amount of time, in Storyminutes, it takes to prepare for performing this Verb. When an Actor makes a Plan based on a given Verb, he will set that Plan's PlannedExecutionTime based on this value.<br>
+<br>
+<U>Time to Execute</U><br>
+<br>
+This is the amount of time to finish performing this Verb. Once an Actor starts performing a Plan with a given Verb, he will continue performing it until a number of Storyminutes have elapsed equal to its Verb's Time to Execute.<br>
+<br>
+<U>Trivial_Momentous</U><br>
+<br>
+This is a BNumber that represents how important this Verb is. A value of -1 is as important as a cat's sneeze - a value of 1 is in the neighborhood of nuclear war.<br>
+<br>
+<U>Hijackable</U><br>
+<br>
+This can be set to either "true" or "false." If "true," it means that only one Actor can react to Sentences predicated on this Verb. Any Actors beyond the first are not allowed to react.<br>
+<br>
+<U>Occupies DirObject</U><br>
+<br>
+This can be set to either "true" or "false." If "true," it means that, once an Actor has begun performing a Plan predicated on this Verb, he can't do anything until he's fnished (see Time to Execute, above).<br>
+<br>
+<U>Use AbortIf Script</U><br>
+<br>
+This property indicates whether or not this Verb will have an AbortIf Script.<br>
+Verb Consequences<br>
+<br>
+A Verb can have any number of Consequnce Scripts. These are executed whenever a Sentence is performed that is predicated on this Verb. Consequence Scripts are extremely flexible, and can change almost any value in the storyworld and set Alarms, among other things. See "Types of Scripts." for details.<br>
+<br>
+<br>
+<B>System Verbs</B><br>
+<br>
+System Verbs is a special category of Verbs that appears in every storyworld. You can't add or remove any Verbs to or from this category, but you can edit some of the existing System Verbs to achieve various special effects. Other System Verbs are only used by automated functions, and you can't interfere with them in any way.<br>
+<br>
+<U>Once Upon a Time</U><br>
+<br>
+This first Sentence performed when your storyworld starts is "Fate once upon a time." Only Fate witnesses this Verb, so only she can react to it. Define a Role for her and give her one Option - she will kickstart your storyowrld with that Option. Otherwise, don't mess with this Verb!<br>
+<br>
+<U>DailyPlotPoint</U><br>
+<br>
+Once per StoryDay, Fate will perform the Sentence "Fate DailyPlotPoint." The Audience definition for this is "Everybody," so any Actor can react to it. Define Roles and Options for this Verb to create daily patterns of activity for your Actors. Otherwise, don't mess this Verb!<br>
+<br>
+<U>HourlyPlotPoint</U><br>
+<br>
+As above, but Fate performs it every StoryHour. Because the turn of a day is also the turn of an hour, both PlotPoints will trigger when a StoryDay ends.<br>
+<br>
+<U>MeetingAlarm</U><br>
+<br>
+You can set a MeetingAlarm for two Actors using the SetMeetingAlarm Consequence. This Alarm will trigger when the first Actor specified in the Script meets the second. When that happens, Fate will perform the Sentence "Fate MeetingAlarm [DirObject] [Actor1]," where DirObject is the first Actor and Actor1 is the second Actor. In itself, this Sentence doesn't do anything, and only Fate witnesses it. Which is why you'll want to define Roles and Options for MeetingAlarm, so that Fate reacts to it by doing something. For example, causing the two Actors to fall in love at first sight. Don't do anything else to this Verb!<br>
+<br>
+<U>PropAlarm</U><br>
+<br>
+As above, only triggered when an Actor meets a Prop.<br>
+<br>
+<U>StageAlarm</U><br>
+<br>
+As above, but with Stages.<br>
+<br>
+<U>ClockAlarm</U><br>
+<br>
+This works a little differently than the above. The SetClockAlarm Script specifies an Actor and a time. When that time arrives, a ClockAlarm is triggered for that Actor.<br>
+<br>
+<U>Do what?</U><br>
+<br>
+There's nothing productive you can do with this Verb. It's just a placeholder for the player to click on to choose the Verb of his reaction Plan.<br>
+<br>
+<U>Depart for</U><br>
+<br>
+Actors use this Verb automatically during the Travel Cycle to leave the Stage they're in. Don't touch it!<br>
+<br>
+<U>Arrive at</U><br>
+<br>
+As above, used to enter a new Stage.<br>
+<br>
+<U>Start test run</U><br>
+<br>
+This Verb is provided for your convenience. When testing a storyworld, you would normally have Fate react to "once upon a time" by performing "start test run" on the Protagonist. This is strictly optional, though. You can give this Verb Roles and Options, but otherwise don't mess with it.<br>
+<br>
+<hr><br></font><div align="center"><font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-stages.html">Stages</a><br></font></div>
+</div>
+</div>
+</body> 
+</html> 
+
+<!-- Localized -->

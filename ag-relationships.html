@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Storytron - Relationships</title>
+<meta name="GENERATOR" content="Virtual Mechanics SiteSpinner V2 270f ">
+<meta http-equiv="imagetoolbar" content="false">
+
+<style type="text/css"><!--
+.fsx01 {font-size: 11px;}
+.fsx02 {font-size: 12px;}
+.fsx03 {font-size: 13px;}
+.fsx04 {font-size: 15px;}
+.fsx05 {font-size: 16px;}
+.fsx06 {font-size: 19px;}
+.fsx07 {font-size: 21px;}
+.fsx08 {font-size: 24px;}
+.fsx09 {font-size: 27px;}
+.fsx10 {font-size: 29px;}
+.fsx11 {font-size: 32px;}
+.fsx12 {font-size: 35px;}
+.fsx13 {font-size: 37px;}
+.fsx14 {font-size: 48px;}
+.fsx15 {font-size: 64px;}
+.fsx16 {font-size: 96px;}
+.txdec {text-decoration: none;}
+#centered{position:relative;width:984px;height:100%;margin:0px auto 0 auto;text-align:left;padding-left:1px;cursor:default}
+#Oobj446 {position:absolute;z-index:1;visibility:visible;left:0px;top:2px;width:200px;height:147px;}
+#Oobj915 {position:absolute;z-index:2;visibility:visible;text-align:left;left:395px;top:75px;width:400px;height:41px;}
+#Oobj917 {position:absolute;z-index:3;visibility:visible;text-align:left;left:207px;top:115px;width:767px;height:2515px;background-color:#ffffff;border-width:6px;border-style:solid;border-color:#ffffff;}
+#Oobj456 {position:absolute;z-index:4;visibility:visible;left:208px;top:-1px;width:775px;height:28px;}
+#Oobj457 {position:absolute;z-index:5;visibility:visible;text-align:left;left:220px;top:1px;width:741px;height:28px;}
+#Oobj459 {position:absolute;z-index:6;visibility:visible;left:208px;top:27px;width:775px;height:28px;}
+
+input,textarea,select {color:#000000;font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;}
+.dfltt {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+.dfltc {font-family:'Times New Roman';font-size:16px;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;color:#000000;}
+body {margin:0px;text-align:center;height:100%;width:100%;}
+-->
+</style>
+</head> 
+
+<body bgcolor="#dec4a6" alink="#ff0000" link="#8c6756" vlink="#747474" >
+
+<div id="centered">
+<div id="Oobj446">
+<a href="http://www.storytron.com/AuthorsGuide/index.php"><img name="Ggeo250" Align=Top src="images/logo.gif" alt="" border="0" width="200" height="147"></a>
+</div>
+
+<div id="Oobj915">
+<div id="Ggeo137" class="dfltt">
+<div align="center"><font face="Bookman Old Style" class="fsx06"><B>Relationships<br></B></font></div>
+</div>
+</div>
+
+<div id="Oobj917">
+<div id="Grtf139" class="dfltt">
+<font face="Bookman Old Style" class="fsx04">Storytronics keeps track of what each Actor thinks of each other Actor, Stage and Prop using a set of Relationship Traits. These are divided into Perceived Traits and Relationship State Traits.<br>
+<br>
+Note that, while Actor-to-Actor Relationships are displayed in the Relationship Editor in Swat, Actor-to-Prop and Actor-to-Stage Relationships are displayed and edited in the Prop and Stage Editors, respectively.<br>
+<br>
+<B>Perceived Traits</B><br>
+<br>
+Perceived Traits (pTraits) represent an Actor's impressions of the Hidden Core Traits of Stages, of Props, and of other Actors. Like their corresponding Core Traits, Perceived Traits are BNumbers. The value of An Actor's Perceived Trait for an Actor, Prop or Stage is the former's impression of the latter's corresponding Core Trait. For example, if an Actor has a pCool_Volatile of 1 for another Actor, it means the former believes the latter has a Cool_Volatile of 1. A value of -1 means the former believes the latter has a Cool_Volatile of -1, and so on (BNumbers can only approximate the values of 1 and -1, so these are idealizations).<br>
+<br>
+An Actor has one Perceived Trait for each Hidden Core Trait of each Actor, Stage and Prop in the storyworld. For example, if your storyworld has two Actors, and your Personality Profile only has the two default Hidden Core Traits, Cool_Volatile and Quiet_Chatty, then each of your Actors will automatically have a pCool_Volatile Trait and a pQuiet_Chatty Trait for the other Actor. Each will also have a pCool_Volatile Trait and a pQuiet_Chatty Trait towards himself. If you were to add a third Actor to you storyworld, that Actor would have pCool_Volatile and pQuiet_Chatty towards himself and towards each of the two preexisting Actors. The preexisting Actors will also have pCool_Volatile and pQuiet_Chatty towards the newcomer. If you were to add a new Hidden Core Trait to your storyworld, each of you Actors would now have a corrsponding pTrait for himself and for each other Actor in the storyworld.<br>
+Actor-to-Prop and Actor-to-Stage Perceived Traits are very similar to Actor-to-Actor Perceived Traits. They correspond to the Hidden Core Traits of Props and Stages, respectively. Obviously, Stages and Props don't have Perceived Traits towards Actors (or towards themselves or each other, for that matter!).<br>
+<br>
+<B>Confidence Traits</B><br>
+<br>
+Each Actor has a Confidence Trait (cTrait) associated with each of his Perceived Traits. A Confidence Trait determines how confident the Actor is of the accuracy of its associated Perceived Trait. For example, if an Actor has cCool_Volatile of 1 towards another Actor, it means the former is convinced he knows the true value of the latter's Cool_Volatile. A value of -1 means the former doesn't have any faith in his impression of the latter's Cool_Volatile. A value of 0 means the former is reasonably confident about his impression of the latter's Cool_Volatile, but is keeping an open mind.<br>
+<br>
+<B>Relationship State Traits</B><br>
+<br>
+Relationship State Traits are completely different from the State Traits of Actors, Props and Stages. In fact, they are more similar to Perceived Traits, except they don't represent an Actor's perception of a Core Trait. Instead, they represent his perception of the nature of his relationship with another Actor, Prop, Stage or Event. The six Relationship State Traits are:<br>
+<br>
+Debt_Grace (Actor-to-Actor)<br>
+<br>
+If an Actor has Debt_Grace of 1 for another, it means the former considers the latter to be heavily indebted to him in some way. A value of -1 means the former feels heavily indebted to the latter. A value of 0 means the former feels he is "even" with the latter.<br>
+<br>
+Stranger_Kin (Actor-to-Actor)<br>
+<br>
+If an Actor has Stranger_Kin of 1 for another, it means the former considers the latter to be a part of his nuclear family, socially if not biologically. A value of -1 means the former thinks the latter is distanced from himself, to only link between the two being, at most, their membership of the same species. A value of 0 means the former considers the latter to be a fairly distant acquaintance, or a stranger who is a member of the same social group or class.<br>
+<br>
+Familiarity (Actor-to-Actor)<br>
+<br>
+If an Actor has Familiarity of 1 towards another, it means the former knows the latter very well. If he has familiarity of -1, it means he doesn't know the latter at all. If he has 0, it means he has some knowledge of the latter. Familiarity overlaps with Confidence Traits, and indeed it can serve as a replacement for them - see "Manual VS Automated Relationship Management," below).<br>
+<br>
+Unwelcoming_Homey (Actor-to-Stage)<br>
+<br>
+If an Actor has Unwelcoming_Homey of 1 for a Stage, it means he feels completely at home in that Stage. A value of -1 means he feels completely out of his element there. A value of 0 means he feels that Stage is a neutral place.<br>
+<br>
+KnowsMe (Prop-to-Actor, Stage-to-Actor)<br>
+<br>
+Each Stage and each Prop has a KnowsMe value for each Actor. This can be either "true" or "false," indicating whether the Prop or Stage in question is known to the Actor in question. Like Familiarity for Actors, this value can serve as a replacement for CTraits for Stages and Props. See below.<br>
+<br>
+WhoKnows (Event-to-Actor)<br>
+<br>
+Each Event has a WhoKnows calue for each Actor. This can be either "true" or "false," indicating whether the Actor in question has witnessed the Event in question. You can't set this value yourself - it's set automatically when the Event is entered into the Historybook.<br>
+<br>
+<B>Manual VS Automated Relationship Management</B><br>
+<br>
+For each Core Trait in your storyoworld, you can set whether that Trait's associated Relationships will be managed manually or automatically. The rest of this documentation assumes that your Traits are managed manually, so here we will assume the opposite. Therefore, the following only applies to Traits that you set to "auto-manage."<br>
+<br>
+When an a Trait is auto-managed, it means that all its associated PTraits, and their associated CTraits, are under computer control. You can't initialize these values in Swat, and you can't change these values using Conseqeunces and EmotionalReactions. The system manages P and CTraits for Actors a little differently than it does for Props and Stages.<br>
+<br>
+<B>Auto-Managed Actor-to-Prop and Actor-to-Stage Relationships</B><br>
+<br>
+These Relationships are auto-managed in a very simple way. When the KnowsMe of a Prop or Stage is "false" for a given Actor, then that Actor's CTraits for that Prop or Stage are auto-set to -1 (actually, just approaching -1) and his PTraits for that Prop or Stage are auto-set to 0. If KnowsMe is "true," that Actor's CTraits are auto-set to (approaching) 1 and his PTraits are set to the actual values of their associated Core Traits.<br>
+<br>
+<B>Auto-Managed Actor-to-Actor Relationshisps</B><br>
+<br>
+Actor-to-Actor CTraits are auto-managed in a simple way; an Actor's CTraits for another always equal the former's Familiarity towards the latter. An Actor-toActor PTrait is auto-set based on two values: the actual value of its associated Core Trait, and the value of the perceiving Actor's associated AccordTrait. The relative weight of these two values varied according to Familiarity. When and Actor's Familiarity for another is -1, his PTrait for that Actor is determined based soly on the former's own associated AccTrait. When Familiarity is 1, the former disregards his own AccTrait, and his PTrait for the latter is equal to the actual value of the latter's associated Core Trait. When Familiarity is 0, the former's AccTrait and the latter's Core Trait are given equal weight, and the resulting PTrait is an average of the relevant AccTrait and Core Trait.<br>
+<br>
+<hr><br></font><div align="center"><font face="Bookman Old Style" class="fsx03">Previous:&nbsp; <a href="ag-actors.html">Actors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next:&nbsp; <a href="ag-props.html">Props</a><br></font></div>
+</div>
+</div>
+</body> 
+</html> 
+
+<!-- Localized -->
